@@ -5,4 +5,9 @@ App.LeadController = Ember.ObjectController.extend
   ).property('isDirty', 'isSaving')
 
   actions:
-      saveChanges: -> @get('model').save()
+
+    saveChanges: -> @get('model').save()
+
+    delete: ->
+      @get('model').destroyRecord().then =>
+        @transitionToRoute 'leads'
