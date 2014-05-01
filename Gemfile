@@ -10,6 +10,7 @@ gem 'jquery-rails'
 gem 'pg'
 gem 'puma'
 gem 'rails'
+gem 'rails_12factor'
 gem 'sass-rails'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'spring', group: :development
