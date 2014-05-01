@@ -4,5 +4,6 @@ App.Router.reopen
 
 App.Router.map ->
   @resource 'leads', path: '/', ->
+    @route 'new'
     @resource 'lead', path: '/lead/:id', ->
       @route 'edit'
